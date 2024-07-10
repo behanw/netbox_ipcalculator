@@ -1,8 +1,9 @@
-from netbox.settings import VERSION # type: ignore
-if VERSION.startswith("3."):
-    from extras.plugins import PluginConfig # type: ignore
-else:
-    from netbox.plugins import PluginConfig # type: ignore
+#from netbox.settings import VERSION # type: ignore
+#if VERSION.startswith("3."):
+#    from extras.plugins import PluginConfig # type: ignore
+#else:
+#    from netbox.plugins import PluginConfig # type: ignore
+from netbox.plugins import PluginConfig # type: ignore
 
 from .pluginvars import (
     __version__,
